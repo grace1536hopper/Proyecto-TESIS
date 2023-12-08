@@ -1,0 +1,170 @@
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-header bg-info">
+                <h4 class="m-b-0 text-white">Datos personales</h4>
+            </div>
+            <div class="card-body">
+                <form action="#" *ngIf="credencial">
+                    <div class="form-body">
+                        <h3 class="card-title">Generales</h3>
+                        <hr>
+                        <div class="row p-t-20">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label">Boleta</label>
+                                    <input type="text" id="boleta" disabled class="form-control"
+                                        placeholder="{{credencial.boleta}}">
+                                </div>
+                            </div>
+                            <!--/span-->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label">Nombre</label>
+                                    <input type="text" id="nombre" disabled class="form-control"
+                                        placeholder="{{credencial.DatosAcademicos.nombre}}">
+                                </div>
+                            </div>
+                            <!--/span-->
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label">Plantel</label>
+                                    <input type="text" id="nombre" disabled class="form-control"
+                                        placeholder="{{credencial.DatosAcademicos.plantel}}">
+                                </div>
+                            </div>
+                            <!--/span-->
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label">CURP</label>
+                                    <input type="text" id="curp" disabled class="form-control"
+                                        placeholder="{{credencial.DatosAcademicos.curp}}">
+                                </div>
+                            </div>
+                            <!--/span-->
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label">RFC</label>
+                                    <input type="text" id="rfc" disabled class="form-control" placeholder="{{credencial.DatosAcademicos.rfc}}">
+                                </div>
+                            </div>
+                            <!--/span-->
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label">Sexo</label>
+                                    <input type="text" id="sexo" disabled class="form-control" placeholder="{{credencial.DatosAcademicos.sexo}}">
+                                </div>
+                            </div>
+                            <!--/span-->
+                        </div>
+                        <!--/row-->
+                        <div class="row">
+                            <!--/span-->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label">Fecha de cumpleaños</label>
+                                    <input type="date" class="form-control" placeholder="{{fechaNacimientoFormateada}}">
+                                </div>
+                            </div>
+                            <!--/span-->
+                        </div>
+
+                        <!--/row-->
+                        <h3 class="box-title m-t-40">Dirección</h3>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-12 ">
+                                <div class="form-group">
+                                    <label>Calle</label>
+                                    <input disabled type="text" class="form-control" placeholder="{{credencial.DatosAcademicos.direccion.calle}}">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Numero Exterior</label>
+                                    <input disabled type="number" class="form-control" placeholder="{{credencial.DatosAcademicos.direccion.numExt}}">
+                                </div>
+                            </div>
+                            <!--/span-->
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Numero Interior</label>
+                                    <input disabled type="number" class="form-control" placeholder="{{credencial.DatosAcademicos.direccion.numInt}}">
+                                </div>
+                            </div>
+                            <!--/span-->
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Colonia</label>
+                                    <input disabled type="text" class="form-control" placeholder="{{credencial.DatosAcademicos.direccion.colonia}}">
+                                </div>
+                            </div>
+                            <!--/span-->
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Código Postal</label>
+                                    <input type="number" disabled class="form-control" placeholder="{{credencial.DatosAcademicos.direccion.cp}}">
+                                </div>
+                            </div>
+                            <!--/span-->
+                        </div>
+
+                        <!--/row-->
+                        <h3 class="box-title m-t-40">Escolaridad</h3>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-12 ">
+                                <div class="form-group">
+                                    <label>Escuela de procedencia</label>
+                                    <input disabled type="text" class="form-control" placeholder="{{credencial.DatosAcademicos.escolaridad.escuelaProcedencia}}">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Entidad federativa de escuela de procedencia</label>
+                                    <input disabled type="text" class="form-control" placeholder="{{credencial.DatosAcademicos.escolaridad.entidadFederativaEscuelaProcedencia}}">
+                                </div>
+                            </div>
+                            <!--/span-->
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Promedio Secundaria</label>
+                                    <input disabled type="number" class="form-control" placeholder="{{credencial.DatosAcademicos.escolaridad.promedioSecundaria}}">
+                                </div>
+                            </div>
+                            <!--/span-->
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Promedio Nivel Medio Superior</label>
+                                <input disabled type="text" class="form-control" placeholder="{{credencial.DatosAcademicos.escolaridad.promedioNivelMedioSuperior}}">
+                                </div>
+                            </div>
+                            <!--/span-->
+
+                        </div>
+
+                    </div>
+                    <!-- <div class="form-actions">
+                        <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i> Save</button>
+                        <button type="button" class="btn btn-inverse">Cancel</button>
+
+                        <button type="submit" class="btn btn-success"> Modificar</button>
+                    </div> -->
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
