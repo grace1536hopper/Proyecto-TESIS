@@ -8,7 +8,7 @@
         <!-- ============================================================== -->
         <div class="navbar-header">
             <a class="navbar-brand" href="index.html">
-                <!-- Logo icon --><b> 
+                <!-- Logo icon --><b>
                     <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                     <!-- Dark Logo icon -->
                     <img src="./assets/images/background/logo_unisis.png" style="width: 100%" alt="homepage" class="dark-logo" />
@@ -180,12 +180,12 @@
                     </div>
                 </li>
                 ==============================================================
-                End Messages 
+                End Messages
                 ============================================================== -->
 
                 <!-- ==============================================================
                 Language
-                ============================================================== 
+                ==============================================================
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false"> <i class="flag-icon flag-icon-us"></i></a>
@@ -217,7 +217,11 @@
                             <li role="separator" class="divider"></li>
                             <li><a routerLink="account-settings"><i class="ti-settings"></i> Configuración</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="#"><i class="fa fa-power-off"></i> Cerrar sesión</a></li>
+                            <li>
+                              <a (click)="logout()" class="cursor">
+                                <i class="fa fa-power-off">
+                                </i> Cerrar sesión</a>
+                            </li>
                         </ul>
                     </div>
                 </li>

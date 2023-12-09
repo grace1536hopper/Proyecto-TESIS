@@ -34,7 +34,6 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
-
     const credenciales: CredencialesUsuario = {
       boleta: this.loginForm.value.boleta,
       contrasena: this.loginForm.value.contrasena,

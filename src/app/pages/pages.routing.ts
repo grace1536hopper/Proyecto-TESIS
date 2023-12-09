@@ -24,7 +24,7 @@ import { InscribirSaberesPreviosComponent } from './inscribir-saberes-previos/in
 import { SaberesPreviosComponent } from './saberes-previos/saberes-previos.component';
 import { SeguimientoComponent } from './seguimiento/seguimiento.component';
 import { LoginComponent } from '../auth/login/login.component';
-import { authGuard } from '../guards/auth.guard';
+import {authGuard} from '../guards/auth.guard';
 
 const routes: Routes = [
 

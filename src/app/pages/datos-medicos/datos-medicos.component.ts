@@ -17,6 +17,7 @@ export class DatosMedicosComponent {
 
   ngOnInit(): void {
     this.getDatosAcademicos();
+
   }
 
   getDatosAcademicos(){
